@@ -50,8 +50,8 @@ function Hero() {
               borderLeftWidth: '2px',
               borderRightWidth: '2px',
               ':hover': {
-                bgcolor: 'rgba(232, 111, 102, 0.1)', // Example hover background color
-                borderColor: '#d85a50', // Darken border color on hover
+                bgcolor: 'rgba(232, 111, 102, 0.1)',
+                borderColor: '#d85a50',
               },
             }}
           >
@@ -61,13 +61,12 @@ function Hero() {
 
         <Box
           sx={{
-            display: 'flex', // Enables Flexbox layout
-            justifyContent: 'center', // Centers the items horizontally
-            gap: '30px', // Adjusts the space between the items
-            marginTop: 10, // Adds space between the button and the icons
+            display: 'flex',
+            justifyContent: 'center',
+            gap: '30px',
+            marginTop: 10,
           }}
         >
-          {/* LinkedIn Icon */}
           <Link href="https://www.linkedin.com/" passHref>
             <IconButton
               target="_blank"
@@ -83,8 +82,7 @@ function Hero() {
               <LinkedInIcon />
             </IconButton>
           </Link>
-
-          {/* GitHub Icon */}
+          
           <Link href="https://github.com/" passHref>
             <IconButton
               target="_blank"

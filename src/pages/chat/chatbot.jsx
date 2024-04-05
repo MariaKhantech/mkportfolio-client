@@ -7,16 +7,12 @@ import PDFViewer from '../../components/PDFViewer/PDFViewer';
 const chatBot = () => {
   const [open, setOpen] = React.useState(false);
   return (
-    // <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
     <>
-      {/* Toggle Button for demonstration */}
       <Button onClick={() => setOpen(!open)} variant="contained" sx={{ mb: 2 }}>
         Toggle Placeholder
       </Button>
 
       <Grid container spacing={2} sx={{ height: '100%' }}>
-        {/* Placeholder for future use, visibility toggled by `open` */}
-        {/* {open && ( */}
         <Grid
           item
           xs={2}
@@ -28,7 +24,7 @@ const chatBot = () => {
           <Box
             sx={{
               height: '100%',
-              backgroundColor: 'lightblue', // For demonstration
+              backgroundColor: 'lightblue',
               display: open ? 'flex' : 'none',
               justifyContent: 'center',
               alignItems: 'center',
@@ -58,14 +54,8 @@ const chatBot = () => {
             <ResumeChatBot />
           </Box>
         </Grid>
-
-        {/* <Grid item xs={2} sm={2} md={2} lg={2} xl={2}>
-          {' '}
-         
-        </Grid> */}
       </Grid>
     </>
-    // </Container>
   );
 };
 

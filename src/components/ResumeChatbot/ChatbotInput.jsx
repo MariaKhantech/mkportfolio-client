@@ -18,7 +18,6 @@ function ChatbotInput() {
 
     setIsLoading(true);
     setQuestion('');
-   // await addChatAnswer(dateNow, '.....');
     try {
       const res = await fetch('/api/chat', {
         method: 'POST',
@@ -45,9 +44,8 @@ function ChatbotInput() {
   };
 
   const handleKeyDown = (event) => {
-    // Check if the Enter key was pressed
     if (event.key === 'Enter') {
-      event.preventDefault(); // Prevent the default form submission behavior
+      event.preventDefault();
       fetchData();
     }
   };

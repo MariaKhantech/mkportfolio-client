@@ -1,4 +1,3 @@
-// utils/api.js
 //CHANGE TO:LOCAL_API_ENDPOINT for local development
 //CHANGE TO:PUBLIC_API_ENDPOINT for amplify
 export const getApiEndpoint = question => {

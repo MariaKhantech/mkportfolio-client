@@ -10,7 +10,6 @@ import { CssVarsProvider as JoyCssVarsProvider } from '@mui/joy/styles';
 import { AppCacheProvider } from '@mui/material-nextjs/v14-pagesRouter';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import '@/styles/globals.css';
-// Import the styles provided by the react-pdf-viewer packages
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
