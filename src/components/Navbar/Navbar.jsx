@@ -12,7 +12,7 @@ import Link from 'next/link';
 
 function NavBar() {
   return (
-    <AppBar position="static" sx={{ bgcolor: '#97263A' }}>
+    <AppBar position="static" sx={{ bgcolor: '#ed8d91' }}>
       <Toolbar>
         <Typography
           variant="h4"

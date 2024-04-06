@@ -2,6 +2,7 @@ import * as React from 'react';
 import Box from '@mui/joy/Box';
 import Hero from '../components/Hero/Hero';
 import Testimonials from '../components/TestimonialSection/Testimonial';
+import PortfolioSection from '../components/PortfolioSection/PortfolioSection';
 import { getRecommendationsEndpoint } from '@/utils/api';
 
 function Home(recommendations) {
@@ -16,6 +17,7 @@ function Home(recommendations) {
     >
       <Hero />
       <Testimonials recommendations={recommendations.recommendations} />
+      <PortfolioSection />
     </Box>
   );
 }

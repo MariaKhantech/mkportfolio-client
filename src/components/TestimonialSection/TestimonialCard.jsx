@@ -18,9 +18,10 @@ function TestimonialCard({ img, name, position, description, linkedinLink }) {
           width: 650,
           height: 300,
           pr: 8,
-          borderColor: '#97263a',
+          borderColor: 'white',
           borderWidth: 2,
           borderStyle: 'solid',
+          backgroundColor: '#6a202b',
         }}
       >
         <AspectRatio ratio="1" sx={{ width: 90 }}>
@@ -37,7 +38,11 @@ function TestimonialCard({ img, name, position, description, linkedinLink }) {
           </Box>
         </AspectRatio>
         <CardContent>
-          <Typography level="title-lg" id="card-description">
+          <Typography
+            sx={{ color: 'white' }}
+            level="title-lg"
+            id="card-description"
+          >
             {name}
           </Typography>
           <Typography
@@ -49,23 +54,21 @@ function TestimonialCard({ img, name, position, description, linkedinLink }) {
               overlay
               underline="none"
               href="#interactive-card"
-              sx={{ color: 'text.tertiary' }}
+              sx={{ color: '#aec2b8' }}
             >
               {position}
             </Link>
           </Typography>
           <CardContent>
-            <Chip
-              variant="outlined"
-              color="primary"
-              size="sm"
-              sx={{ textDecoration: 'none', borderColor: '#97263a' }}
-            >
-              <Link sx={{ color: '#97263a' }} href={linkedinLink}>
+            <Chip size="sm" sx={{ backgroundColor: '#ed8d91' }}>
+              <Link
+                sx={{ color: '#97263a', textDecoration: 'none' }}
+                href={linkedinLink}
+              >
                 View on LinkedIn
               </Link>
             </Chip>
-            <Typography sx={{ pt: 1 }} level="title-md">
+            <Typography sx={{ pt: 1, color: 'white' }} level="title-md">
               What they say:
             </Typography>
             <Typography
@@ -75,6 +78,7 @@ function TestimonialCard({ img, name, position, description, linkedinLink }) {
                 display: '-webkit-box',
                 textAlign: 'justify',
                 textJustify: 'inter-word',
+                color: 'white',
               }}
             >
               {description}

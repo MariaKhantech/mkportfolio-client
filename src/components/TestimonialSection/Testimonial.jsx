@@ -29,7 +29,7 @@ function Testimonial({ recommendations }) {
         px: 3,
         pt: 6,
         pb: 3,
-        backgroundColor: '#e86f66',
+        backgroundColor: '#97263a',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -47,7 +47,12 @@ function Testimonial({ recommendations }) {
         }}
       >
         <Grid item>
-          <Typography component="h4" level="h4">
+          <Typography
+            component="h4"
+            level="h4"
+            fontWeight="lg"
+            sx={{ color: 'white' }}
+          >
             Testimonials
           </Typography>
         </Grid>
@@ -76,15 +81,22 @@ function Testimonial({ recommendations }) {
               aria-label="Previous testimonial"
               size="large"
             >
-              {<ArrowBackIosIcon sx={{ color: '#97263a' }} />}
+              {<ArrowBackIosIcon sx={{ color: 'white' }} />}
             </Button>
+            <Typography
+              fontWeight="lg"
+              sx={{ color: 'white', mt: '18px' }}
+              component="span"
+            >
+              {`${page + 1} of ${recommendations.posts.length}`}
+            </Typography>
             <Button
               className="next"
               onClick={() => paginateTestimonial(1)}
               aria-label="Next testimonial"
               size="large"
             >
-              {<ArrowForwardIosIcon sx={{ color: ' #97263a' }} />}
+              {<ArrowForwardIosIcon sx={{ color: 'white' }} />}
             </Button>
           </Grid>
         </Box>

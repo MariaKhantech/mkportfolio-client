@@ -49,6 +49,7 @@ function Hero() {
               borderBottomWidth: '0px',
               borderLeftWidth: '2px',
               borderRightWidth: '2px',
+              color: '#97263a',
               ':hover': {
                 bgcolor: 'rgba(232, 111, 102, 0.1)',
                 borderColor: '#d85a50',
@@ -82,7 +83,7 @@ function Hero() {
               <LinkedInIcon />
             </IconButton>
           </Link>
-          
+
           <Link href="https://github.com/" passHref>
             <IconButton
               target="_blank"

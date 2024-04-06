@@ -22,6 +22,9 @@ const theme = createTheme({
       secondary: '#000',
     },
   },
+  typography: {
+    fontFamily: 'Roboto, "Helvetica Neue", Arial, sans-serif',
+  },
 });
 
 export default function App({ Component, pageProps }) {
