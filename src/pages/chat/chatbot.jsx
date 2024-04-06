@@ -1,11 +1,10 @@
-import React from 'react';
-import { Box, Container, Grid, Button } from '@mui/material';
+import React, { useState } from 'react';
+import { Box, Grid, Button } from '@mui/material';
 import ResumeChatBot from '../../components/ResumeChatbot/ResumeChatbot';
 import PDFViewer from '../../components/PDFViewer/PDFViewer';
 
-
-const chatBot = () => {
-  const [open, setOpen] = React.useState(false);
+function Chatbot() {
+  const [open, setOpen] = useState(false);
   return (
     <>
       <Button onClick={() => setOpen(!open)} variant="contained" sx={{ mb: 2 }}>
@@ -57,6 +56,6 @@ const chatBot = () => {
       </Grid>
     </>
   );
-};
+}
 
-export default chatBot;
+export default Chatbot;

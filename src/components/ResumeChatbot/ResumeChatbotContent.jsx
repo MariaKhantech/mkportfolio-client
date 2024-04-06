@@ -31,7 +31,7 @@ function ResumeChatbotContent(props) {
                   display: 'flex',
                   justifyContent: 'left',
                   marginTop: '1rem',
-                 marginLeft: '1rem',
+                  marginLeft: '1rem',
                 }}
               >
                 <ChatBubble botChat={true} bgColor="#aeb9cc">

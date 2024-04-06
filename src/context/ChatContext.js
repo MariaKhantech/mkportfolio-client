@@ -27,10 +27,16 @@ const ChatProvider = ({ children }) => {
     setChatHistory([]);
   };
 
-
   return (
     <ChatContext.Provider
-      value={{ chatHistory, addChatQuestion, addChatAnswer, clearChatHistory, isLoading, setIsLoading }}
+      value={{
+        chatHistory,
+        addChatQuestion,
+        addChatAnswer,
+        clearChatHistory,
+        isLoading,
+        setIsLoading,
+      }}
     >
       {children}
     </ChatContext.Provider>

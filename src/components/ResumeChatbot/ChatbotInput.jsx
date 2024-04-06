@@ -4,12 +4,12 @@ import { ChatContext } from '../../context/ChatContext';
 import { Box, TextField, IconButton, InputAdornment } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
 
-
 function ChatbotInput() {
   const [question, setQuestion] = useState();
   const [error, setError] = useState(null);
 
-  const { addChatQuestion, addChatAnswer, setIsLoading} = useContext(ChatContext);
+  const { addChatQuestion, addChatAnswer, setIsLoading } =
+    useContext(ChatContext);
 
   const fetchData = async () => {
     const dateNow = new Date();
@@ -43,7 +43,7 @@ function ChatbotInput() {
     }
   };
 
-  const handleKeyDown = (event) => {
+  const handleKeyDown = event => {
     if (event.key === 'Enter') {
       event.preventDefault();
       fetchData();
@@ -51,7 +51,6 @@ function ChatbotInput() {
   };
 
   return (
-
     <Box
       sx={{
         borderTop: '1px solid #ccc',

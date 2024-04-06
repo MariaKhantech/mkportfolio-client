@@ -12,7 +12,7 @@ import Link from 'next/link';
 
 function NavBar() {
   return (
-    <AppBar position="static" sx={{ bgcolor: '#97263A' }}>
+    <AppBar position="static" sx={{ bgcolor: '#ed8d91' }}>
       <Toolbar>
         <Typography
           variant="h4"
@@ -39,7 +39,7 @@ function NavBar() {
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           <Hidden smDown>
             <Link
-              href="/chat/chatbotai"
+              href="/chat/chatbot"
               style={{
                 color: 'white',
                 textDecoration: 'none',

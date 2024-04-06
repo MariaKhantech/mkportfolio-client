@@ -27,18 +27,20 @@ function ChatHeader() {
           sx={{ display: 'flex', alignItems: 'center' }}
         >
           MK AI Chat Bot
-          {isLoading ? (<Typography sx={{ ml: 2 }}>
-            <LoadingButton
-              loading
-              loadingPosition="start"
-              startIcon={<SaveIcon />}
-              color="error"
-            >
-              Processing...
-            </LoadingButton>
-          </Typography>) : ""
-          }
-          
+          {isLoading ? (
+            <Typography sx={{ ml: 2 }}>
+              <LoadingButton
+                loading
+                loadingPosition="start"
+                startIcon={<SaveIcon />}
+                color="error"
+              >
+                Processing...
+              </LoadingButton>
+            </Typography>
+          ) : (
+            ''
+          )}
         </Typography>
       </Box>
     </Box>

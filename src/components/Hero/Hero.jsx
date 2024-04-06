@@ -34,7 +34,7 @@ function Hero() {
           skills and projects in a conversational manner.
         </Typography>
         <Link
-          href="/chat/resumeaibot"
+          href="/chat/chatbot"
           underline="none"
           sx={{ color: '#e86f66', marginBottom: 5 }}
         >
@@ -49,13 +49,14 @@ function Hero() {
               borderBottomWidth: '0px',
               borderLeftWidth: '2px',
               borderRightWidth: '2px',
+              color: '#97263a',
               ':hover': {
                 bgcolor: 'rgba(232, 111, 102, 0.1)',
                 borderColor: '#d85a50',
               },
             }}
           >
-            Let's chat with us
+            {"Let's chat with us"}
           </Button>
         </Link>
 
@@ -82,7 +83,7 @@ function Hero() {
               <LinkedInIcon />
             </IconButton>
           </Link>
-          
+
           <Link href="https://github.com/" passHref>
             <IconButton
               target="_blank"

@@ -2,7 +2,7 @@ import * as React from 'react';
 import {
   DocumentHeadTags,
   documentGetInitialProps,
-} from '@mui/material-nextjs/v13-pagesRouter'; // or `v14-pagesRouter` if you are using Next.js v14
+} from '@mui/material-nextjs/v13-pagesRouter';
 import { Html, Head, Main, NextScript } from 'next/document';
 export default function MyDocument(props) {
   return (

@@ -7,6 +7,5 @@ export const getApiEndpoint = question => {
 
 export const getRecommendationsEndpoint = () => {
   const endpoint = process.env.LOCAL_API_RECOMMENDATIONS_ENDPOINT;
-  console.log('recommendations', endpoint);
   return endpoint;
 };
