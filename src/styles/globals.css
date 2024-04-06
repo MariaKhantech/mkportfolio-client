@@ -1,0 +1,10 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #f7f9f8;
+}
+
+a {
+  text-decoration: none;
+}
