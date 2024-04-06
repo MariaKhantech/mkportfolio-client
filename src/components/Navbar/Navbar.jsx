@@ -86,7 +86,7 @@ function NavBar() {
         </Typography>
         <Avatar
           alt="Avatar"
-          src="/images/avatar.jpg"
+          src="/images/avatar.JPG"
           sx={{
             width: 60,
             height: 60,
