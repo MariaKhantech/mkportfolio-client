@@ -16,7 +16,7 @@ function ChatBubble({ children, userChat, bgColor }) {
           borderRadius: userChat ? '20px 20px 0px 20px' : '20px 20px 20px 0px',
           width: 250,
           minHeight: 25,
-          backgroundColor:  `${bgColor}`,
+          backgroundColor: `${bgColor}`,
           boxShadow: 'sm',
           p: 2,
           position: 'relative',

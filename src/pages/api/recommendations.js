@@ -5,12 +5,9 @@ async function handler(req, res) {
     const API_ENDPOINT = getRecommendationsEndpoint();
 
     try {
-      const fastApiResponse = await fetch(
-        'http://localhost:8000/recommendations',
-        {
-          method: 'GET',
-        }
-      );
+      const fastApiResponse = await fetch(API_ENDPOINT, {
+        method: 'GET',
+      });
       const data = await fastApiResponse.json();
       console.log('getting recommendations:', data);
       res.status(200).json(data);

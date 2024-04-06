@@ -34,7 +34,7 @@ function Hero() {
           skills and projects in a conversational manner.
         </Typography>
         <Link
-          href="/chat/resumeaibot"
+          href="/chat/chatbot"
           underline="none"
           sx={{ color: '#e86f66', marginBottom: 5 }}
         >
@@ -56,7 +56,7 @@ function Hero() {
               },
             }}
           >
-            Let's chat with us
+            {"Let's chat with us"}
           </Button>
         </Link>
 

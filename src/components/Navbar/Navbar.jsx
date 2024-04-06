@@ -39,7 +39,7 @@ function NavBar() {
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           <Hidden smDown>
             <Link
-              href="/chat/chatbotai"
+              href="/chat/chatbot"
               style={{
                 color: 'white',
                 textDecoration: 'none',

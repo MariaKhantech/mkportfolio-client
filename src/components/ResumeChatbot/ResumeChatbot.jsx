@@ -1,16 +1,16 @@
 'use client';
 /* eslint-disable no-unused-vars */
 import ChatHeader from './ChatHeader';
-import { Grid} from '@mui/material';
+import { Grid } from '@mui/material';
 import ResumeChatbotContent from './ResumeChatbotContent';
 import ResumeChatbotFooter from './ResumeChatbotFooter';
 
 function ResumeGptBot() {
-
   return (
     <>
-      
-      <Grid container sx={{
+      <Grid
+        container
+        sx={{
           width: '100%',
           margin: '0 auto',
           borderTopLeftRadius: '20px',
@@ -24,12 +24,11 @@ function ResumeGptBot() {
           height: '85vh',
         }}
       >
-         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <ChatHeader />
-          <ResumeChatbotContent  />
-          <ResumeChatbotFooter/>
-          </Grid>
-  
+          <ResumeChatbotContent />
+          <ResumeChatbotFooter />
+        </Grid>
       </Grid>
     </>
   );
