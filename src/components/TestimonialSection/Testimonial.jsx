@@ -9,7 +9,7 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 function Testimonial({ recommendations }) {
-  const [[page, direction], setPage] = useState([0, 0]);
+  const [[page], setPage] = useState([0, 0]);
 
   const paginateTestimonial = newDirection => {
     const nextPage =
