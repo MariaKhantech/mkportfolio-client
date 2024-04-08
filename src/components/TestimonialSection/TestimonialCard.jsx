@@ -15,7 +15,7 @@ function TestimonialCard({ img, name, position, description, linkedinLink }) {
         variant="outlined"
         orientation="horizontal"
         sx={{
-          width: 650,
+          width: 750,
           height: 300,
           pr: 8,
           borderColor: 'white',

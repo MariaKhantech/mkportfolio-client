@@ -2,7 +2,9 @@ import * as React from 'react';
 import Box from '@mui/joy/Box';
 import Hero from '../components/Hero/Hero';
 import Testimonials from '../components/TestimonialSection/Testimonial';
-import PortfolioSection from '../components/PortfolioSection/PortfolioSection';
+import WorkExperience from '../components/WorkExperience/WorkExperience';
+import AboutMe from '../components/AboutMe/AboutMe';
+import Projects from '../components/Projects/Projects';
 import { getRecommendationsEndpoint } from '../utils/api';
 
 function Home({ recommendations }) {
@@ -12,12 +14,13 @@ function Home({ recommendations }) {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundColor: '#f7f9f8',
-        height: '84vh',
       }}
     >
       <Hero />
-      <Testimonials recommendations={recommendations.recommendations} />
-      <PortfolioSection />
+      <AboutMe />
+      <WorkExperience />
+      <Projects />
+      <Testimonials recommendations={recommendations} />
     </Box>
   );
 }

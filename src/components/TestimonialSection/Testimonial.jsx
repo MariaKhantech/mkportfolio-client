@@ -38,12 +38,13 @@ function Testimonial({ recommendations }) {
     >
       <Grid
         container
-        direction="column"
         spacing={2}
         sx={{
-          maxWidth: '690px',
+          maxWidth: '700px',
           flexGrow: 1,
           margin: 'auto',
+          justifyContent: 'center',
+          display: 'flex',
         }}
       >
         <Grid item>

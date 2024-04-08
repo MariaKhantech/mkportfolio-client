@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Navbar from '../components/Navbar/Navbar';
+import Layout from '../components/Layout/Layout';
 import { ChatProvider } from '../context/ChatContext';
 import {
   experimental_extendTheme as materialExtendTheme,
@@ -15,7 +15,6 @@ import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
 const materialTheme = materialExtendTheme();
 
-// for reasons I have not figured out yet, this is needed in order to use MUI styling methods.
 const theme = createTheme({
   palette: {
     text: {
@@ -34,9 +33,10 @@ export default function App({ Component, pageProps }) {
         <JoyCssVarsProvider>
           <ThemeProvider theme={theme}>
             <AppCacheProvider {...pageProps}>
-              <Navbar />
               <ChatProvider>
-                <Component {...pageProps} />
+                <Layout>
+                  <Component {...pageProps} />
+                </Layout>
               </ChatProvider>
             </AppCacheProvider>
           </ThemeProvider>

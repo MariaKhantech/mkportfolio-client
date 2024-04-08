@@ -2,7 +2,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/joy/Typography';
 
-function PortfolioSection() {
+function WorkExperience() {
   return (
     <Box
       component="section"
@@ -12,7 +12,7 @@ function PortfolioSection() {
         px: 3,
         pt: 6,
         pb: 3,
-        backgroundColor: 'white',
+        backgroundColor: '#97263a',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -36,7 +36,7 @@ function PortfolioSection() {
             fontWeight="lg"
             sx={{ color: 'black' }}
           >
-            PORTFOLIO
+            Work Experience
           </Typography>
         </Grid>
         <Box sx={{ justifyContent: 'center' }}>
@@ -49,4 +49,4 @@ function PortfolioSection() {
   );
 }
 
-export default PortfolioSection;
+export default WorkExperience;
