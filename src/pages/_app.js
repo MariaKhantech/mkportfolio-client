@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Script from 'next/script';
 import Layout from '../components/Layout/Layout';
 import { ChatProvider } from '../context/ChatContext';
 import {
@@ -29,6 +30,10 @@ const theme = createTheme({
 export default function App({ Component, pageProps }) {
   return (
     <>
+      <Script
+        src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
+        strategy="beforeInteractive"
+      />
       <MaterialCssVarsProvider theme={{ [MATERIAL_THEME_ID]: materialTheme }}>
         <JoyCssVarsProvider>
           <ThemeProvider theme={theme}>

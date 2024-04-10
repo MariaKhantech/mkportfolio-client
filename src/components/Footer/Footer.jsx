@@ -12,6 +12,7 @@ function Footer() {
       <BottomNavigation
         showLabels
         value={value}
+        sx={{ bgcolor: '#ed8d91' }}
         onChange={(event, newValue) => {
           setValue(newValue);
         }}

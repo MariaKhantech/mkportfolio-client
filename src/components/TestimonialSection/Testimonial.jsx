@@ -18,6 +18,51 @@ function Testimonial({ recommendations }) {
     setPage([nextPage, newDirection]);
   };
 
+  if (recommendations && !recommendations.posts) {
+    return (
+      <Box
+        component="section"
+        sx={{
+          flexGrow: 1,
+          overflow: 'hidden',
+          px: 3,
+          pt: 3,
+          pb: 4,
+          backgroundColor: '#97263a',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <Grid
+          container
+          spacing={2}
+          sx={{
+            maxWidth: '700px',
+            flexGrow: 1,
+            margin: 'auto',
+            justifyContent: 'center',
+            display: 'flex',
+          }}
+        >
+          <Grid item>
+            <Typography
+              component="h4"
+              level="h4"
+              fontWeight="lg"
+              sx={{ color: 'white' }}
+            >
+              Testimonials
+            </Typography>
+          </Grid>
+
+          <Typography>Try again later</Typography>
+        </Grid>
+      </Box>
+    );
+  }
+
   const post = recommendations.posts[page];
 
   return (
